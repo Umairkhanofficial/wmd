@@ -13,10 +13,6 @@ console.log("person name in upper case =>",uppercase);
 //person name in Title case
 
 
-
-
-
-
 //Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks: Albert Einstein once said, “A person who never made a mistake never tried anything new.”
 
 console.log(`Ernest Hemingway once said, “As a writer, you should not judge, you should understand.”`);
@@ -28,9 +24,6 @@ let famous_person:string ="Ernest Hemingway";
 let message:string =`once said, “As a writer, you should not judge, you should understand.”`;
 console.log(famous_person,message);
 console.log();
-
-
-
 
 //Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
 console.log("Stripping Name=> ");
