@@ -63,8 +63,14 @@ for (let index = 0; index < names.length; index++) {
     const element = names[index];
     console.log("Hello! Where are you", element);
 }
+console.log();
 //Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
 let transVehicle = ["Hounda", "Bmx", "Ferrari"];
 transVehicle.forEach((vehicle) => {
     console.log(`i would love to ride the ${vehicle}`);
 });
+//Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+let arr = ["Harry", "Adam", "Brooke"];
+for (let index = 0; index < arr.length; index++) {
+    console.log(`Lets gather around the table MR ${arr[index]} and share a meal together`);
+}
