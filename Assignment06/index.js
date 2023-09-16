@@ -83,5 +83,40 @@ console.log("add new Friend in list to invite");
 guests.splice(2, 1, "Zamba");
 //• Print a second set of invitation messages, one for each person who is still in your list.
 for (let index = 0; index < guests.length; index++) {
-    console.log(`Alert new Message to all Lets gather around the table Mr ${guests[index]} and share a meal together`);
+    console.log(`Alert new Message, Lets gather around the table Mr ${guests[index]} and share a meal together`);
 }
+console.log("--------------------------------");
+//More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+//• Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+console.log(`Current guests ${guests}`);
+console.log(`Hello Guests we found bigger table, Lets invite 3 more friends And have fun together`);
+//• Add one new guest to the beginning of your array.
+guests.unshift("Ali");
+console.log("New Guest Added", guests);
+//• Add one new guest to the middle of your array. 
+guests.splice(guests.length / 2, 0, "King ");
+console.log("New guest added in middle Seat", guests);
+//• Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list
+guests.push("Lucy");
+console.log('Last guest added', guests);
+for (let index = 0; index < guests.length; index++) {
+    console.log(`Hello ${guests[index]} Lets gather around And have dinner tonight`);
+}
+console.log("----------------------------------");
+//Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+//• Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
+console.log("Sorry i can invite only two peoples for dinner ");
+//• Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
+while (guests.length > 2) {
+    var delGuest = guests.pop();
+    console.log("Sorry", delGuest, ",Cant invite you to the dinner");
+}
+console.log("Remaining Guests", guests);
+//• Print a message to each of the two people still on your list, letting them know they’re still invited.
+guests.forEach((guest) => {
+    console.log(guest, "You are still invited");
+});
+//• Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
+guests.pop();
+guests.pop();
+console.log("Here we have an empty list", guests);
