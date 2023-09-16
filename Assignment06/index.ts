@@ -98,7 +98,7 @@ transVehicle.forEach((vehicle) => {
 //      ----------Excercise No 14 -------------
 //Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 
-let guests:string[] =["Harry","Adam","Brooke"]
+const guests:string[] =["Harry","Adam","Brooke"]
 for (let index = 0; index < guests.length; index++) {
      console.log(`Lets gather around the table MR ${guests[index]} and share a meal together`);    
 }
@@ -107,7 +107,7 @@ console.log();
 //Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 //      ----------Excercise No 15 -------------
 //• Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it.
-console.log(`${guests[2]} Guest who cant Join the party`);
+console.log(`${guests[3]} Guest who cant Join the party`);
 //• Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 console.log("add new Friend in list to invite");
 
@@ -160,3 +160,96 @@ guests.forEach((guest) => {
 guests.pop();
 guests.pop();
 console.log("Here we have an empty list",guests);
+console.log();
+
+
+//        -------------Excercise No 18
+//Seeing the World: Think of at least five places in the world you’d like to visit.
+//• Store the locations in a array. Make sure the array is not in alphabetical order.
+const locations:string[] =["Berlin","Tokyo","Egypt","Austria"]
+//• Print your array in its original order.
+console.log("orignal order =>",locations);
+
+//• Print your array in alphabetical order without modifying the actual list.
+const alphaOrderList:string[] = locations.slice();
+alphaOrderList.sort();
+console.log("Alphabetical order without modifying actual list",alphaOrderList);
+//• Show that your array is still in its original order by printing it.
+console.log("Actual list still in orignal order",locations);
+//• Print your array in reverse alphabetical order without changing the order of the original list.
+const reverseOrder:string[] = [...locations];
+//.reverse()
+reverseOrder.sort((a, b) => b.localeCompare(a));
+console.log("Reverse order =>",reverseOrder);
+ 
+//• Show that your array is still in its original order by printing it again.
+console.log("Array still in its original order",locations);
+//• Reverse the order of your list. Print the array to show that its order has changed.
+locations;
+
+locations.sort((a, b) => b.localeCompare(a));
+console.log("Reverse order Real array =>",locations);
+//• Reverse the order of your list again. Print the list to show it’s back to its original order.
+locations;
+
+locations.sort((a, b) => a.localeCompare(b));
+console.log("Reverse order to Actual =>",locations);
+
+//• Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+locations.sort();
+console.log("Array order has been changed",locations);
+//• Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+locations.sort((a, b) => b.localeCompare(a));
+console.log("its order has changed=>",locations);
+console.log("----------------");
+//       -------------- Excercise No 19----------------
+//Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+console.log(`we invited ${guests.length} people for dinner `);
+console.log();
+ 
+//       -------------- Excercise No 20----------------
+// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+
+const person = {
+    firstnane:"king",
+    lastname: "khan",
+    phone: "92300",
+    address: "NtuFsd",
+};
+console.log(person);
+//       -------------- Excercise No 21----------------
+//Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+
+/*
+const guests:string[] =["Harry","Adam","Brooke"]
+console.log(`${guests[8]} Guest who cant Join the party`);*/
+
+//       -------------- Excercise No 21----------------
+/*Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+
+let car = 'subaru';
+
+console.log("Is car == 'subaru'? I predict True.")
+
+console.log(car == 'subaru')
+
+• Look closely at your results, and make sure you understand why each line evaluates to True or False.
+
+• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.*/
+let bikecolor:string="red";
+console.log("is background black I predict it is false")
+console.log("Result ", bikecolor==="black"||bikecolor==="Black")
+console.log("is background white I predict it is true")
+console.log("Result ", bikecolor==="red")
+
+console.log("is 7>2 I predict false")
+console.log(7<2)
+console.log("is 1<2 I predict true")
+console.log(1<2)
+console.log("is 5-5===0 I predict true")
+console.log(5-5===0)
+console.log("9==9 i predict true");
+console.log(3*3==9);
+console.log("i predict is true");
+console.log(2%2==0);
+
