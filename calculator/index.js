@@ -4,33 +4,39 @@ async function calc() {
         {
             name: 'num1',
             type: 'number',
-            message: 'enter First number',
+            message: 'Enter First Number',
         },
         {
             name: 'num2',
             type: 'number',
-            message: 'enter your second number',
+            message: 'Enter Your Second Number',
         },
         {
             name: 'operation',
             type: 'list',
             message: 'select your operation',
-            choices: ["Addition", "Subtraction", "Multiplication", "Modulus", "Division", "Exponent"],
+            choices: ["+", "-", "*", "%", "/", "**"],
         },
     ]);
     console.log(result);
     switch (result.operation) {
-        case "Addition":
+        case "+":
             console.log(result.num1 + result.num2);
             break;
-        case "Subtraction":
+        case "-":
             console.log(result.num1 - result.num2);
             break;
-        case "Multiplication":
+        case "*":
             console.log(result.num1 * result.num2);
             break;
-        case "Division":
+        case "%":
+            console.log(result.num1 % result.num2);
+            break;
+        case "/":
             console.log(result.num1 / result.num2);
+            break;
+        case "**":
+            console.log(result.num1 ** result.num2);
             break;
         default:
             break;
