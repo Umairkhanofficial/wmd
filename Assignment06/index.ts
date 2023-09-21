@@ -448,3 +448,27 @@ if (favorite_fruits.includes("orange")) {
 } else {
     console.log("Oranges are not one of your favorite fruits.");
 }
+//30
+console.log("\n ex 30 \n");
+const userNames:string[]=["Talha","admin","Iftikhar","Babar"]
+userNames.forEach((names=>{
+    if (names=="admin"){console.log(`Hello ${names}, would you like to see a status report?`)}
+    else {console.log(`Hello ${names}, thank you for logging in again.`);
+    }   
+}))
+
+//--------------Excercise NO 31------------- 
+console.log("\n excercise 31 \n");
+
+userNames.length=0;
+if(userNames.length===0)
+{
+    console.log("We need to find some users!");
+    
+}
+
+//--------------Excercise NO 32-------------
+console.log("\n  \n");
+const currentUsers: string[] = ["uk","Arif","Ilyas"]
+const newUsers: string[] = ["UK", "ARIF", "babar", "Moin"];
+
