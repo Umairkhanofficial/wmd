@@ -468,7 +468,25 @@ if(userNames.length===0)
 }
 
 //--------------Excercise NO 32-------------
-console.log("\n  \n");
+/*console.log("\n  \n");
 const currentUsers: string[] = ["uk","Arif","Ilyas"]
-const newUsers: string[] = ["UK", "ARIF", "babar", "Moin"];
+const newUsers: string[] = ["UK", "ARIF", "babar", "Moin"];*/
 
+//33 ordinal number 
+ console.log("\n ex 33 \n"); 
+ const numArr:number[]=[1,2,3,4,5,6,7,8,9]; 
+ const ordinalArr=numArr.map((num)=>{ 
+     if(num===1){ 
+         return num+"st" 
+     } 
+     else if (num===2) 
+     { return num+"nd"} 
+     else if (num===3) 
+     {return num+"rd"} 
+     else{return num+"th"} 
+ }) 
+ ordinalArr.forEach((num)=>{ 
+     console.log(num); 
+  
+ } 
+ )
