@@ -490,3 +490,19 @@ const newUsers: string[] = ["UK", "ARIF", "babar", "Moin"];*/
   
  } 
  )
+//---------34 pizzas ----------
+ console.log("\n exercise 34 \n"); 
+ const favPizzas:string[]=["special pizza", "Chiken fajita", "Mamamia Classic kabab"] 
+ for (const pizza of favPizzas) 
+ { 
+     console.log(pizza); 
+  
+ } 
+  
+ for (const pizza of favPizzas) 
+ { 
+     console.log(`I like ${pizza} pizza`); 
+  
+ } 
+ console.log(`I like ${favPizzas.length} kinds of pizzas . These all are my favourites`); 
+ console.log("I really like pizzas");
