@@ -506,3 +506,20 @@ const newUsers: string[] = ["UK", "ARIF", "babar", "Moin"];*/
  } 
  console.log(`I like ${favPizzas.length} kinds of pizzas . These all are my favourites`); 
  console.log("I really like pizzas");
+
+//35 Animals 
+ console.log("\n ex 35 \n"); 
+  
+ const animals:string[]=["Dog","Car","Goat"] 
+ for (let i=1;i<animals.length;i++) 
+ { 
+     console.log(animals[i]); 
+  
+ } 
+  
+ for (const animal of animals) 
+ { 
+     console.log(`A ${animal} would make a great pet`); 
+  
+ } 
+ console.log("Any of these animals would make a great pet!");
