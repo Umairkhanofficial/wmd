@@ -415,3 +415,71 @@ if (favorite_fruits.includes("orange")) {
 else {
     console.log("Oranges are not one of your favorite fruits.");
 }
+//30
+console.log("\n ex 30 \n");
+const userNames = ["Talha", "admin", "Iftikhar", "Babar"];
+userNames.forEach((names => {
+    if (names == "admin") {
+        console.log(`Hello ${names}, would you like to see a status report?`);
+    }
+    else {
+        console.log(`Hello ${names}, thank you for logging in again.`);
+    }
+}));
+//--------------Excercise NO 31------------- 
+console.log("\n excercise 31 \n");
+userNames.length = 0;
+if (userNames.length === 0) {
+    console.log("We need to find some users!");
+}
+//--------------Excercise NO 32-------------
+/*console.log("\n  \n");
+const currentUsers: string[] = ["uk","Arif","Ilyas"]
+const newUsers: string[] = ["UK", "ARIF", "babar", "Moin"];*/
+//33 ordinal number 
+console.log("\n ex 33 \n");
+const numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const ordinalArr = numArr.map((num) => {
+    if (num === 1) {
+        return num + "st";
+    }
+    else if (num === 2) {
+        return num + "nd";
+    }
+    else if (num === 3) {
+        return num + "rd";
+    }
+    else {
+        return num + "th";
+    }
+});
+ordinalArr.forEach((num) => {
+    console.log(num);
+});
+//---------34 pizzas ----------
+console.log("\n exercise 34 \n");
+const favPizzas = ["special pizza", "Chiken fajita", "Mamamia Classic kabab"];
+for (const pizza of favPizzas) {
+    console.log(pizza);
+}
+for (const pizza of favPizzas) {
+    console.log(`I like ${pizza} pizza`);
+}
+console.log(`I like ${favPizzas.length} kinds of pizzas . These all are my favourites`);
+console.log("I really like pizzas");
+//35 Animals 
+console.log("\n ex 35 \n");
+const animals = ["Dog", "Car", "Goat"];
+for (let i = 1; i < animals.length; i++) {
+    console.log(animals[i]);
+}
+for (const animal of animals) {
+    console.log(`A ${animal} would make a great pet`);
+}
+console.log("Any of these animals would make a great pet!");
+//36 shirt function
+console.log("\n ex 36 \n");
+function make_shirt(size, message) {
+    console.log(`The size of shirt is ${size} and "${message}" is printed on it`);
+}
+make_shirt("M", "I love code");

@@ -523,3 +523,11 @@ const newUsers: string[] = ["UK", "ARIF", "babar", "Moin"];*/
   
  } 
  console.log("Any of these animals would make a great pet!");
+ //36 shirt function
+console.log("\n ex 36 \n");
+
+function make_shirt(size:string,message:string){
+    console.log(`The size of shirt is ${size} and "${message}" is printed on it`);
+    
+}
+make_shirt("M","I love code")
