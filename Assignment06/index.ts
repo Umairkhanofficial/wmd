@@ -531,3 +531,12 @@ function make_shirt(size:string,message:string){
     
 }
 make_shirt("M","I love code")
+//-------38 describe city 
+ console.log("\n ex 38 \n"); 
+  
+ function describe_city(city:string,country:string="pakistan") { 
+     console.log(`${city} is in ${country}`); 
+ } 
+ describe_city("Faisalabad") 
+ describe_city("karachi","pak") 
+ describe_city("London","England")
