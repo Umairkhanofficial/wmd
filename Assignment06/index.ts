@@ -540,3 +540,12 @@ make_shirt("M","I love code")
  describe_city("Faisalabad") 
  describe_city("karachi","pak") 
  describe_city("London","England")
+//39 city country pair 
+ console.log("\n ex 39 \n"); 
+ function city_country(city:string,country:string) 
+     { 
+         return `"${city},${country}"` 
+     } 
+ console.log(city_country("Faisalabad","Pakistan")); 
+ console.log(city_country("Lahore","Pakistan")); 
+ console.log(city_country("Ohio","USA"));
