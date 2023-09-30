@@ -549,3 +549,19 @@ make_shirt("M","I love code")
  console.log(city_country("Faisalabad","Pakistan")); 
  console.log(city_country("Lahore","Pakistan")); 
  console.log(city_country("Ohio","USA"));
+//40  --------Album 
+ console.log("\n ex 40 \n"); 
+ function make_album(_name:string,_title:string,_track?:number){  
+     let album:{name:string;title:string;track?:number}={ 
+         name:_name, 
+         title:_title, 
+         track:_track 
+     } 
+  
+ return album 
+ } 
+ let album1=make_album("Music","New Album") 
+ console.log(album1); 
+ console.log(make_album("New music 2","New Album 2")); 
+ console.log(make_album("New music 3","New Album 3")); 
+ console.log(make_album("New music 4","New Album 4",9));
