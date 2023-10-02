@@ -565,3 +565,15 @@ make_shirt("M","I love code")
  console.log(make_album("New music 2","New Album 2")); 
  console.log(make_album("New music 3","New Album 3")); 
  console.log(make_album("New music 4","New Album 4",9));
+//41 Magicians: prints the name of each magician in the array. 
+ console.log("\n ex 41 \n"); 
+ const magicianNames:string[]=["Talha","Altaf","Dilawar","Bhatti"] 
+ function show_magicians(arr:string[]) 
+     { 
+         for (const magician of arr) 
+         { 
+             console.log("magician is ",magician); 
+  
+         } 
+     } 
+     show_magicians(magicianNames)
