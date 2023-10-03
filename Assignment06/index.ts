@@ -577,3 +577,20 @@ make_shirt("M","I love code")
          } 
      } 
      show_magicians(magicianNames)
+
+     //43 without changing magician names 
+     console.log("\n ex 43 \n"); 
+     const magicianNamesOrignal:string[]=["Talha","Altaf","Dilawar","Bhatti"] 
+     const greatNames :string[]=[] 
+     console.log("Orignal names "+ magicianNamesOrignal); 
+  
+     function makeGreat_WithoutChanging(arr:string[]){ 
+         for (const magician of arr) 
+         { 
+            greatNames.push("The great "+magician)  
+         } 
+         return greatNames 
+     } 
+     console.log( 
+     makeGreat_WithoutChanging(magicianNamesOrignal)) 
+     console.log("Still orignal "+ greatNames );
