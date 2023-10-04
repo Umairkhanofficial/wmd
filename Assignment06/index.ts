@@ -594,3 +594,19 @@ make_shirt("M","I love code")
      console.log( 
      makeGreat_WithoutChanging(magicianNamesOrignal)) 
      console.log("Still orignal "+ greatNames );
+
+    //44 car 
+     console.log("\n ex 44 \n"); 
+  
+     function createCar(manufacturer: string, modelName: string, ...options: { [key: string]: any }[]) { 
+         const car = { 
+             manufacturer:manufacturer, 
+             modelName:modelName 
+         }; 
+         for (const option of options) { 
+             Object.assign(car, option); 
+         } 
+         return car; 
+     } 
+     const car1 = createCar("Honda", "City", { color: "Silver", year: 2022 }); 
+     console.log(car1);
